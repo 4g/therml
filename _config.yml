@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-minimal
 title: TherML
 description: Optimizing HVAC control policies with Machine Learning
 logo: http://storage.googleapis.com/solveforx/therml/blog/images/logo.png
