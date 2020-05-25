@@ -47,6 +47,7 @@ Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into 
 **Simple optimisation on data model**
  - Better setpoints according to weather
  - Reacting with a chiller instead of PAHUs
+ 
  ![PUE optimization](https://storage.googleapis.com/solveforx/therml/blog/images/pue_opt.png)
  
  **RL policies**
