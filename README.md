@@ -1,5 +1,5 @@
-![Data center simulation ](https://storage.googleapis.com/solveforx/therml/blog/images/dcvid.gif =480x)
-
+![Data center simulation] 
+(https://storage.googleapis.com/solveforx/therml/blog/images/dcvid.gif =480x)
 
 ## Using data to cool data centers
 Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into keeping it cool². A system of different mechanisms works together to bring heat out from a datacenter and discard it into the atmosphere. These mechanims are controlled by their own local control systems. In this post, we detail how to control a system of systems more efficiently.
