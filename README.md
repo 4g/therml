@@ -18,7 +18,7 @@ Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into 
  - Continuous control
 
 **Let us try this on a simple simulator ?** 
-![Data center simulation ](http://storage.googleapis.com/solveforx/therml/blog/images/dcvid.gif =480x)
+![Data center simulation ](https://storage.googleapis.com/solveforx/therml/blog/images/dcvid.gif =480x)
  - Environment
 	 - Red balls are hot, blue balls are cold
 	 - Physics engine simulates motion of balls
@@ -45,7 +45,7 @@ Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into 
 **Simple optimisation on data model**
  - Better setpoints according to weather
  - Reacting with a chiller instead of PAHUs
-![Data center simulation ](http://storage.googleapis.com/solveforx/therml/blog/images/pue_opt.png =500x)
+![PUE optimization](https://storage.googleapis.com/solveforx/therml/blog/images/pue_opt.png =500x)
  **RL policies**
  - Action space of controls
  - Agent
