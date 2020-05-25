@@ -1,34 +1,50 @@
-## Using data to cool data centers
+
+## Using data to cool data centers
 Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into keeping it cool². A system of different mechanisms works together to bring heat out from a datacenter and discard it into the atmosphere. These mechanims are controlled by their own local control systems. In this post, we detail how to control a system of systems more efficiently.
 
-### Markdown
+### 
+**Why are they inefficient ?**
+ - Local controls
+ - Tacit knowledge
+ - Complex interaction
+ - Difficult to model
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Can we design a better control system ?** 
+ - Data based modelling
+ - Fixed point optimisation 
+ - Reinforcement learning on data model
+ - Reinforcement learning directly on system
+ - Continuous control
 
-```markdown
-Syntax highlighted code block
+**Let us try it on a simple simulator ?** 
+ - Environment
+	 - Red balls are hot, blue balls are cold
+	 - Physics engine simulates motion of balls
+	 - Reward is given when all servers have cooled down
+	 - Time penalty for taking too long
+	 - Pymunk engine
+ - Trpo agent
+ - Results
 
-# Header 1
-## Header 2
-### Header 3
+**Modelling a real data center**
+ - Sensory data from a real DC. Glance into data, simple EDA. 
+ - Part based models
+	 - Time delay in action
+	 - LSTMs to simulate individual parts
+	 - Each part connected to another
+	 - Part connection graph
+	 - State Machine composed of these parts is our simulator
+	 - Accuracy of simulation
+	 - Model sanity check
+ - By product, predictive maintenance 
 
-- Bulleted
-- List
+**Simple optimisation on data model**
+ - Better setpoints according to weather
+ - Reacting with a chiller instead of PAHUs
 
-1. Numbered
-2. List
+ **RL policies**
+ - Agent
+ - Rewards
+ - Results
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/4g/therml/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**System design**
