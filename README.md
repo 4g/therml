@@ -20,7 +20,6 @@ Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into 
 
 **Let us try this on a simple simulator ?** 
 - Environment
-![Data center simulation](http://storage.googleapis.com/solveforx/therml/blog/images/dcvid.gif)
 	 - Red balls are hot, blue balls are cold
 	 - Physics engine simulates motion of balls
 	 - Reward is given when all servers have cooled down
@@ -28,6 +27,8 @@ Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into 
 	 - Pymunk engine
  - Trpo agent
  - Results
+
+![Data center simulation](http://storage.googleapis.com/solveforx/therml/blog/images/dcvid.gif)
 
 ### Solution
 **Modelling a real data center**
@@ -47,6 +48,7 @@ Data centers consume 2–3% of worlds power¹. 30–50% of this power goes into 
  - Better setpoints according to weather
  - Reacting with a chiller instead of PAHUs
  ![PUE optimization](https://storage.googleapis.com/solveforx/therml/blog/images/pue_opt.png)
+ 
  **RL policies**
  - Action space of controls
  - Agent
